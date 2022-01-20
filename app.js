@@ -6,6 +6,7 @@
 // ********** set date ************
 const date = document.getElementById("date");
 date.innerHTML = new Date().getFullYear();
+
 // ********** close links ************
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
@@ -21,7 +22,10 @@ navToggle.addEventListener("click", function () {
     linksContainer.style.height = 0;
   }
 });
+
 // ********** fixed navbar ************
+const navbar = document.getElementById("nav");
+const topLink = document.querySelector(".top-link");
 
 // ********** smooth scroll ************
 // select links
